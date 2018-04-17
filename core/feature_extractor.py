@@ -98,6 +98,7 @@ class FeatureExtractor(object):
         company_age_months = (company_age.years * 12) + company_age.months
         features['company_age_months'] = company_age_months
         features['name'] = company_js['name']
+        features['permalink'] = company_js['permalink']
         features['number_of_tech_crunch_article'] = self.get_tech_crunch_articles_count(
             company_permalink, features['label_date'])
 
@@ -346,6 +347,7 @@ class FeatureExtractor(object):
         }
 
 import os
+
 
 def get_features_for_all_companies():
     total_file = 0
