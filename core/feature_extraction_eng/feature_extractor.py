@@ -1,4 +1,4 @@
-from .EntityParser import EntityParser
+from cmpt733.core.EntityParser import EntityParser
 import datetime as dt
 from datetime import datetime as dt
 from dateutil import relativedelta
